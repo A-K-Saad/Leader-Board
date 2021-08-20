@@ -172,6 +172,56 @@ section{
     border-radius: 25px;
 }
 /*-------------------------
+    Comments
+--------------------------*/
+#comment-container{
+    padding: 0 40px;
+    padding-bottom: 40px;
+}
+.comment{
+    box-shadow: 0px 0px 5px #ddd;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.comment-btn{
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: #b91212;
+    color: #fff;
+    border: none;
+    margin: 10px 40px;
+}
+.comment-btn:hover{
+    background-color: #a31313;
+    color: #f1ecec;
+}
+
+/*-------------------------
+    Like section
+--------------------------*/
+.like-section{
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 15%;
+}
+.like-section input{
+    padding: 16px;
+    width: 35px;
+    height: 10px;
+    border: 1px solid #beb6b647;
+    text-align: center;
+}
+.like-section i{
+    font-size: 35px;
+    padding-left: 25px;
+}
+.like-section i:hover{
+    color: #4788ff;
+}
+/*-------------------------
     Media Quiries
 --------------------------*/
 @media (max-width: 668px){

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/bf2572e12f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -30,38 +32,38 @@
         </header>
         <main>
             <section>
-                <div class="part-container">
+                <div id="players" class="part-container">
                     <h1 class="top-title">Top Players</h1>
-                        <div class="top-players">
-                            <div class="player-single">
-                                <img src="images/players/player-1.png" alt="">
-                                <h3>Ronald Weasley</h3>
-                            </div>
-                            <div class="player-single">
-                                <img src="images/players/player-2.png" alt="">
-                                <h3>Sirius Black</h3>
-                            </div>
-                            <div class="player-single">
-                                <img src="images/players/player-3.png" alt="">
-                                <h3>Severus Snape</h3>
-                            </div>
-                            <div class="player-single">
-                                <img src="images/players/player-4.png" alt="">
-                                <h3>Tom Riddle</h3>
-                            </div>
-                            <div class="player-single">
-                                <img src="images/players/player-5.png" alt="">
-                                <h3>James Potter</h3>
-                            </div>
-                            <div class="player-single">
-                                <img src="images/players/player-6.png" alt="">
-                                <h3>Draco Malfoy</h3>
-                            </div>
+                    <div class="top-players">
+                        <div class="player-single">
+                            <img src="images/players/player-1.png" alt="">
+                            <h3>Ronald Weasley</h3>
                         </div>
-                        <hr>
+                        <div class="player-single">
+                            <img src="images/players/player-2.png" alt="">
+                            <h3>Sirius Black</h3>
+                        </div>
+                        <div class="player-single">
+                            <img src="images/players/player-3.png" alt="">
+                            <h3>Severus Snape</h3>
+                        </div>
+                        <div class="player-single">
+                            <img src="images/players/player-4.png" alt="">
+                            <h3>Tom Riddle</h3>
+                        </div>
+                        <div class="player-single">
+                            <img src="images/players/player-5.png" alt="">
+                            <h3>James Potter</h3>
+                        </div>
+                        <div class="player-single">
+                            <img src="images/players/player-6.png" alt="">
+                            <h3>Draco Malfoy</h3>
+                        </div>
+                    </div>
+                    <br>
                 </div>
-                <div class="part-container">
-                        <h1 class="top-title">Top Blogs</h1>
+                <div id="blogs" class="part-container">
+                    <h1 class="top-title">Top Blogs</h1>
                     <div class="top-blogs">
                         <div class="blog-single">
                             <img src="images/blogs/blog-1.png" alt="">
@@ -84,7 +86,7 @@
             </section>
             <section>
                 <div class="part-container">
-                        <h1 class="top-title">Top Blogs</h1>
+                    <h1 class="top-title">Top Blogs</h1>
                     <div class="top-courses">
                         <div class="course-single">
                             <img src="images/courses/course-1.png" alt="">
@@ -105,7 +107,7 @@
                                         <p>2:30 hr</p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="course-single">
@@ -127,7 +129,7 @@
                                         <p>1:30 hr</p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="course-single">
@@ -149,15 +151,31 @@
                                         <p>3:30 hr</p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+            <section class="like-section">
+                <input id="like-count" type="number" value="0" min="0">
+                <i class="far fa-thumbs-up" id="like" onclick="likeIncreasing()"></i>
+            </section>
+            <section class="comment-section">
+                <h1 class="top-title">Comments:</h1>
+                <div id="comment-container">
+                    <div class="comment">
+                        <h2>Albus Dumbledore</h2>
+                        <p>An awesome course to say. Help were always been given to the student.</p>
+                    </div>
+                </div>
+                <button id="add-comment" class="comment-btn">Add Comments</button>
+                <button id="remove-comment" class="comment-btn">Remove Comments</button>
+            </section>
+
         </main>
     </div>
-    
+    <script src="app.js"></script>
 </body>
+
 </html>
